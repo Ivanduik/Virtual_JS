@@ -1,0 +1,18 @@
+body{
+    background-color: black; 
+   
+   
+}
+main{
+    z-index: 350;
+}
+header{
+    z-index: 350;
+}
+.container{
+    
+max-width: 854px;
+margin: auto;
+overflow: hidden;
+
+}

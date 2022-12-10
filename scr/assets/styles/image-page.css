@@ -1,0 +1,100 @@
+
+.image-page{
+    margin: auto;
+    max-width: 854px;
+    box-sizing: border-box;
+    background-color: black;
+    overflow: hidden;
+    padding: 31px 58px 34px 58px;
+    position: relative;
+}
+ .image-page__img{
+       width: 738px;       
+       height: 488px;       
+    border: 1px solid rgba(228, 229, 231, 0.23);
+        border-radius: 5px;
+        margin-bottom: 32px;
+        background-image: url('../images/image-page__img.svg');
+ }
+ 
+ .image-page__title{
+    
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 26px;        
+        text-decoration-line: underline;      
+    
+        color: #FFFFFF;
+        margin-bottom: 32px;
+ }
+ .image-page__text{
+    
+        max-width: 738px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+    
+        color: #EFDEDE;
+ }
+ .image-page::before{
+        content: '';
+        position: absolute;
+        width: 676px;
+        height: 651px;
+        bottom: -170px;
+        left: -160px;
+        background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+        z-index: -1;
+  }
+  @media  screen and (max-device-width: 768px){
+       .image-page__img{
+              width: auto;
+       }
+  }
+  @media  screen and (max-device-width: 530px){
+       .image-page{
+              margin: auto;
+              max-width: 390px;
+              box-sizing: border-box;
+              background-color: black;
+              overflow: hidden;
+              padding: 18px 18px 32px 18px;
+              position: relative;
+              
+          }
+          .image-page__img{
+              max-width: 354px;
+              height: 479px;
+              background-position: 62%;              
+              margin-bottom: 32px;
+          }
+          .image-page__title{  
+              text-align: center;  
+              font-family: 'Orbitron';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 23px;
+              line-height: 29px;        
+              text-decoration-line: underline;      
+          
+              color: #FFFFFF;
+              margin-bottom: 16px;
+  }
+  .image-page__text{
+       text-align: justify;
+       max-width: 738px;
+       font-family: 'Inter';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 12px;
+       line-height: 17px;
+       letter-spacing: -0.02em;
+   
+       color: #EFDEDE;
+}
+}

@@ -1,0 +1,159 @@
+
+.image-card{
+    max-width: 854px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 500;
+
+}
+.image-card-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 31px 58px 42px 58px ;
+     z-index: 500;
+     overflow: hidden;
+       
+    align-self: center;
+    margin-bottom: 32px;
+    max-width: 738px;
+    width: 100%;
+
+}
+
+.image-card-image{
+ 
+    align-self: center;
+    border: 1px solid rgba(228, 229, 231, 0.23);
+    border-radius: 5px;
+    max-width: 738px;
+        width: 100%;
+        max-height: 488px;
+        height: 100%;
+   
+}
+.image-card__info{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    
+}
+.image-card__info-gamename{
+    
+    font-family: 'Orbitron';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 26px;
+margin-bottom: 16px;
+text-decoration-line: underline;
+color: #FFFFFF;
+word-break: break-word;
+}
+.image-card__info-gamedescription{
+font-family: 'Orbitron';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-decoration-line: underline;
+color: #FFFFFF;
+margin-bottom: 36px;
+word-break: break-word;
+
+}
+.image-card__info-user-foto{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.image-card__info-username{
+    display: flex;
+    align-items: center;
+font-family: 'Orbitron';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-decoration-line: underline;
+color: #FFFFFF;
+margin-bottom: 16px;
+word-break: break-word;
+}
+.image-card__info-userreview{
+font-family: 'Orbitron';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-decoration-line: underline;
+color: #FFFFFF;
+word-break: break-word;
+}
+                    
+@media screen and (max-device-width: 530px),
+(max-width: 530px) {
+.image-card-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px 18px 32px 18px;
+    z-index: 500;
+}
+.image-card-image-container{
+    height: 479px;
+        position: relative;
+       
+        width: 100%;
+        overflow: hidden;
+        border-radius: 5px;
+        border: 1px solid rgba(228, 229, 231, 0.23);
+}
+.image-card-image {
+    position: absolute;
+    width: auto;
+    height: 479px;
+    
+    transform: translate(0%, 0%);
+}
+.image-card__info-gamename {
+
+font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: center;
+    text-decoration-line: underline;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+    word-break: break-word;
+}
+
+.image-card__info-gamedescription {
+font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #EFDEDE;
+    margin-bottom: 36px;
+    word-break: break-word;
+
+}
+.image-card__info-user-foto {
+   display: none;
+}
+
+.image-card__info-username {
+   display: none;
+}
+
+.image-card__info-userreview {
+   display: none;
+}
+}

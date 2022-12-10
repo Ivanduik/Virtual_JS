@@ -1,0 +1,225 @@
+.new-experience{  
+    display: flex;
+    max-width: 854px;
+    min-height: 410px;
+    justify-content:space-between;
+    padding: 0px 35px 0px 58px; 
+   
+    flex-wrap: wrap;      
+}
+.new-experience__img
+{
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+.new-experience__img-item
+{
+    margin:0 25px 0 0;
+    display: flex;
+}
+.new-experience__img-photo-girl{
+    display: flex;    
+    height: 302px;
+    margin-right: 20px;
+    padding-top: 17px;
+       
+    }
+.new-experience__img-photo-man{
+       height: 277px;
+       display: flex;
+    align-self: flex-end;
+    margin-right: 65px;
+         
+    }
+    .new-experience__img-photo{
+        display: flex;
+    }
+.new-experience__game{   
+    max-width: 241px;
+    display: flex;
+    flex-direction: column;    
+  
+    align-self: flex-end;
+    align-items: flex-start; 
+    position: relative;   
+
+}
+.new-experience__game-title
+{
+    
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 21px;
+    color: #FFFFFF;
+    line-height: 33px;
+    margin-bottom: 20px;
+
+}
+.new-experience__game-info{
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 15px;   
+    margin-bottom: 21px;
+    
+}
+
+.new-experience__game-btn{    
+    background: linear-gradient(100deg, #B936F5 -22%, #C64C85 100%, #F1005B 100%);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px 18px;
+    z-index: 2;
+    border: none;
+    margin-bottom: 19px;
+}
+.new-experience__game-btn:hover{
+    cursor:pointer;
+}
+
+
+@media  screen and (max-width: 865px) {
+    .new-experience__game::before {
+        content: '';     
+        background: radial-gradient( circle, rgba(11,11,11,1) 3%, rgb(37 4 52) 34%, rgba(0,0,0,1) 71%);
+        left: 314px;
+        bottom: 94px;
+        z-index: -2;
+    }
+    .new-experience__img
+{
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;   
+    justify-content: space-around;
+}
+   
+       
+        .new-experience__img-photo-girl{
+            padding: 5px;
+            margin: 0;
+            display: flex;    
+            height: 302px;           
+               
+            }
+        .new-experience__img-photo-man{
+            padding: 5px;
+                margin: 0;
+               height: 277px;
+               display: flex;            
+            
+                 
+            }
+        
+        .new-experience__game{
+
+            padding-top: 30px;
+            max-width: 220px;
+            display: flex;
+            flex-direction: column;    
+            row-gap: 30px;
+            align-self: flex-end;
+            align-items: flex-start; 
+            position: relative;   
+        
+        } 
+        .new-experience__game{   
+            max-width: 220px;
+            display: flex;
+            align-items: center; 
+            position: relative;   
+        
+        }
+    }
+    @media  screen and (max-device-width: 530px),(max-width: 530px){
+        .new-experience{
+            
+            display: flex;
+            max-width: 724px;
+            min-height: 445px;
+            justify-content:space-between;
+            padding: 0px 4px 0px 7px;
+            position: relative;
+        }
+        .new-experience::before{
+            content: ' ';
+            position: absolute;
+            width: 667.97px;
+            height:660.12px;
+            background: linear-gradient(117deg, rgba(0, 0, 0, 1) 63%, rgb(45 16 59) 92%, rgb(47 17 61) 92%, rgba(0, 0, 0, 1) 94%);
+            right: -20px;
+            z-index: -1;
+        }        
+
+        .new-experience__img-photo-girl{
+            display: flex; 
+            max-height: 249px;
+            padding: 0;
+            margin-right: 16px;             
+            
+               
+            }
+        .new-experience__img-photo-man{
+            padding: 0px;
+            max-height: 229px;
+            display: flex;
+            align-self: flex-end;            
+                 
+            }
+            .new-experience__img-photo  {
+                display: flex;
+                min-height: 325px;
+                margin-bottom: 24px;
+            }
+          
+            .new-experience__game{   
+                max-width:100%; 
+                padding-top: 0; 
+                row-gap: 0;        
+            
+            }
+            .new-experience__game-title
+            {
+                font-family: 'Orbitron';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 19px;
+                line-height: 33px;
+                text-align: center;
+                margin-bottom: 8px;
+                
+            
+            }
+            .new-experience__game-info{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;                
+                color: rgba(255, 255, 255, 0.85);                
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+                margin-bottom: 24px;
+            }
+            .new-experience__game-btn{                    
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 13px;
+                color: #FFFFFF;                
+                padding: 12px 0px;
+                max-width: 209px;
+                width: 100%;               
+            }
+
+}

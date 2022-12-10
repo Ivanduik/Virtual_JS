@@ -1,0 +1,264 @@
+.client-say{   
+    max-width: 854px;
+   
+    padding: 28px 43px 0 43px;  
+    margin: auto;
+    z-index: 10;    
+
+}
+.client-say__sect{    
+    padding-top: 26px;
+    display: flex;
+    flex-direction: column;    
+    background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #AA14F0 -42.58%, rgba(170, 20, 240, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(185, 54, 245, 0) 100%);
+    border-radius: 7px;
+    z-index: 10;
+    
+}
+
+.client-say__sect-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    z-index: 10;
+}
+.client-say__sect-info-title{
+    max-width: 230px;    
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+    padding-right: 10px;
+    
+}
+.client-say__sect-info-text{
+        max-width: 332px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 9px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 0.013em;
+        color: rgba(255, 255, 255, 0.85);
+        z-index: 2;
+        
+}
+
+
+.client-say__clients-item{   
+   
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    column-gap:16px;
+    flex-wrap: wrap;
+    
+}
+.client-say__clients-item-card{
+max-width: 200px;
+width: 100%;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #CB8DE8 -42.58%, rgba(203, 143, 232, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(199, 137, 228, 0) 100%);
+backdrop-filter: blur(11.4349px);
+border-radius: 7px;
+padding: 8px 9px;
+justify-content: space-between;
+z-index: 2;
+margin-bottom: 9px;
+}
+.client-say__clients-item-card-text{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 9px;
+margin-bottom: 9px;
+color: #FFFFFF; 
+       
+}
+.client-say__clients-item-card-yellow-text{
+    color: #F7B603;
+}
+
+.client-say__clients-item-card-blockquote{
+   
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    margin-bottom:6px ;
+    color: #FFFFFF;
+}
+.client-say__clients-item-card-info{    
+    display: flex;
+    flex-direction: row;
+}
+.client-say__clients-item-card-info-photo{
+    display: flex;
+    margin-right: 10px;
+    width: 20px;    
+    border-radius: 100%;
+}
+.client-say__clients-item-card-info-name{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+}
+.client-say__clients-item-card-info-name-user{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5px;
+    line-height: 9px;   
+    letter-spacing: -0.02em;    
+    color: #FFFFFF;
+}
+.client-say__clients-item-card-info-name-link{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5px;
+    line-height: 9px;
+    letter-spacing: -0.02em;    
+    color: #EB4468;
+    margin-top: -3px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: SSSD            
+}
+.client-say__clients-item-card-info-name-link:hover
+{
+cursor: pointer;
+}  
+.client-say__clients-arrow{
+    display: none; 
+    cursor: pointer;
+}
+
+/*.client-say::before{
+    filter: blur(10px);
+    content: '';
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(50.26% 50.26% at 44% 55%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+    right: 0; 
+  
+}*/
+@media  screen and (max-device-width: 530px),(max-width: 480px){
+    .client-say{
+        padding: 36px 16px 0;
+    }
+    .client-say__sect{
+        padding: 24px 0px 0px ;
+    }
+    .client-say__sect-info{
+        margin-bottom: 0;
+        z-index: 1;
+    }
+    .client-say__sect-info-title{
+        font-weight: 700;
+        margin-bottom: 8px;
+        font-size: 19px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .client-say__sect-info-text{
+        font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    margin-bottom: 17px;
+    padding-right: 0;
+    max-width: 313px;
+    }
+    
+    .client-say__clients{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4px;
+    }
+    .client-say__clients-arrow{  
+        display: flex;      
+        z-index: 3;
+        cursor: pointer;
+    }
+    .client-say__clients-item{
+        max-width: 301px;
+        width: 100%;
+    }
+   
+    
+    .client-say__clients-item-card:nth-child(n+2){
+        display: none;
+    }
+    .client-say__clients-item-card{
+        max-width: 301px;
+        width: 100%;
+        padding: 10px 14px 15px 23px;
+        box-sizing: border-box;
+    }
+    .client-say__clients-item-card-text{
+        margin-bottom: 23px;
+        font-size: 6px;
+    }
+    .client-say__clients-item-card-blockquote{
+        max-width: 248px;
+        margin-bottom: 44px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 200;
+        letter-spacing: -0.01em;
+        font-size: 11px;
+        line-height: 10px;
+        color: #FFFFFF;
+    }
+    .client-say__clients-item-card-info-photo{
+        width: 39px;
+    }
+    .client-say__clients-item-card-info-name{
+        justify-content: flex-start;
+        padding-top: 3px;
+
+    }
+    .client-say__clients-item-card-info-name-user{
+        margin-bottom: 7px;
+        font-size: 7px;
+        letter-spacing: 0.02em;
+    }
+    
+    .client-say__clients-item-card-info-name-link {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 7px;
+        line-height: 9px;
+        letter-spacing: 0.02em;
+        color: #EB4468;
+     
+        text-decoration: none;
+        cursor: pointer;
+        z-index: SSSD;
+    }
+    .values-culture__icons-items-blk{
+        max-width: 108px;
+        
+    }
+   
+  
+}

@@ -1,0 +1,66 @@
+.Awesome-experiences{
+    
+    max-width: 854px;
+    box-sizing:border-box;
+    padding: 63px 6px 0px 6px;
+    display: flex;    
+    flex-direction: column;       
+        
+}
+
+.Awesome-experiences__nav{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    border-top-right-radius: 50px;
+    background-image: linear-gradient(99.99deg,rgba(255, 255, 255, 1) -21.45%, rgba(170, 20, 240, 1) 100%);
+    background-color:rgba(83, 70, 134, 1);
+   
+    background-blend-mode: darken;
+    border-width: 1px;
+    border-style: solid;   
+    border-color: #531e86;   
+    padding: 13px 61px 13px 35px;
+   
+}
+
+.Awesome-experiences__nav-title{
+    display: flex;
+    max-width: 300px;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 23px;  
+}
+
+
+@media  screen and (max-device-width: 530px),(max-width: 580px){
+    .Awesome-experiences{  
+        margin-bottom: 94px;
+        padding: 94px 4px 0px;
+        margin: auto; 
+        background-color: transparent;
+            
+    }
+    .Awesome-experiences__nav{            
+        padding: 9px 28px 9px 9px;            
+    }
+    .Awesome-experiences__nav-img{
+        max-width: 92px;
+        border-radius: 7px 20px 7px 7px;
+    }
+    .Awesome-experiences__nav-title{     
+       
+        max-width: 216px;
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;        
+        color: #FFFFFF;       
+    }
+
+}

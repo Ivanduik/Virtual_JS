@@ -1,0 +1,336 @@
+.hero{    
+    display: flex;
+    box-sizing:border-box;
+    padding: 22px 35px 00px 58px;
+    justify-content: space-between;    
+    flex-wrap: wrap; 
+    align-content: center;
+    position: relative;
+    
+
+}
+
+
+.hero__explore{
+    display: flex;    
+    flex-direction: column; 
+    flex-wrap: wrap;   
+    max-width: 362px;
+}
+.hero__explore-information{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.hero__explore-title{     
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
+    color: #FFFFFF;    
+    margin-bottom: 20px;
+    padding-top: 75px;
+    }
+.hero__explore-text{ 
+    
+    max-width: 300px;      
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    
+    color: rgba(255, 255, 255, 0.85);
+    
+    margin-bottom: 22px;
+}
+.hero__invitefriend{
+ 
+    display: flex;
+    align-items: center;    
+    flex-wrap: wrap;
+    margin-bottom: 35px;   
+}
+.hero__invitefriend-btn{
+    
+    padding: 12px 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;    
+    color: #FFFFFF;
+    background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer; 
+   
+}
+.hero__invitefriend-info-btn{
+    padding: 12px 9px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    color:white;  
+    background-color:transparent;
+    border-radius: 4px;
+    margin-left: 8px; 
+   
+    border: none;
+    cursor: pointer;
+    
+}
+
+.hero__users{
+    
+    padding-left: 5px;
+    display: flex;    
+    flex-wrap: wrap;   
+}
+.hero__users-items{
+    display: flex; 
+    list-style-type: none;
+    flex-wrap: wrap;     
+    
+}
+.hero__users-item-img{
+
+    margin-left: -6px;
+    
+}
+.hero__users-online{
+    display: flex;
+    align-items: center;    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;   
+    color: #FFFFFF;
+    flex-wrap: wrap;   
+}
+.hero__users-online::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin: 0 9px 0 17px;
+    z-index: -1;
+}
+.hero__cinematc
+{   position: relative;
+    display:flex;
+    max-width: 362px;
+   
+    flex-wrap: wrap;
+    justify-content: flex-end;   
+    transform: translate(0px, -11px);             
+}
+.hero__cinematc-all{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+/*********************************************/
+.hero__cinematc-information{
+    display: flex;
+    flex-direction: column; 
+    position: absolute;  
+    bottom: 62px;
+    align-items: center;
+    padding-right: 13px;
+}
+/********************************************/
+.hero__cinematc-information-title{
+    
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;   
+    letter-spacing: -0.01em; 
+    color: #FFFFFF;
+    
+}
+.hero__cinematc-information-line{
+    margin: 23px 0 23px 0px;    
+    width: 152px;
+    height: 0px;
+    background: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    
+}
+
+.hero__cinematc-information-text{   
+    max-width: 190px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.01em; 
+    text-align: center;
+    line-height: 13px;
+    color: #FFFFFF;
+    
+    
+}
+
+@media  screen and (max-width: 865px) {
+    .hero{    
+       
+        justify-content:center;    
+      
+    } 
+    .hero__explore-text{
+         max-width:100%;
+        
+    } 
+    .hero__addcard {
+        justify-content: center;
+    }
+    .hero__users {     
+        justify-content: center;
+    }
+}
+@media  screen and (max-device-width: 530px),(max-width: 530px){
+
+.hero{    
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing:border-box;
+    padding: 22px 24px 0px 25px; 
+    }
+    .hero__cinematc{
+        margin-bottom: 0px;
+    }
+
+    .hero__cinematc-img-girl{
+        max-width: 354px;
+    }
+    .hero__cinematc-information{
+    bottom: 51px;
+    padding-right: 10px;
+    }
+    .hero__cinematc-information-title{
+        
+        font-size: 16px;
+        letter-spacing: 0.02em;
+
+    }
+    .hero__cinematc-information-line{
+        margin: 20px 0 20px 0px;
+        max-width: 127px;  
+        width: 100%;
+    }
+    .hero__cinematc-information-text{
+        max-width: 163px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        letter-spacing: -0.033em;
+        text-align: center;
+        line-height: 11px;
+        color: #FFFFFF;
+    }
+    .hero__explore-title{
+        text-align: center;     
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 23px;
+        line-height: 33px;       
+        letter-spacing: 0.018em;        
+        white-space: nowrap;
+        margin-bottom: 8px;
+        padding-top: 12px;
+        }         
+        .hero__explore-text{ 
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 24px;
+        } 
+        .hero__addcard-btn{
+            display: flex;
+            justify-content: center;
+            flex: auto;
+            padding: 11px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 11px;
+            color: #FFFFFF;
+            background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+            border-radius: 4px;
+            border: none; 
+           
+        }
+        
+        
+        .hero__addcard-info-btn{
+            display: flex;
+            flex: auto;
+            justify-content: center;
+            padding: 11px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 11px;
+            color:#e45de4;   
+            background-color:transparent;
+            border-radius: 4px;
+            margin-left: 23px; 
+            border: 1px solid #B936F5 ;        
+        
+        }
+        .hero__explore{
+            margin-bottom: 16px;
+        }   
+        .hero__invitefriend {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 23px;           
+            justify-content:center;
+        }
+            
+            
+    .hero__invitefriend-btn {
+                padding: 12px 13px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 13px;
+                color: #FFFFFF;
+                background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+            }
+    .hero__invitefriend-info-btn {
+                padding: 0;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                color: white;
+                background-color: transparent;
+                border-radius: 4px;
+                margin-left: 25px;
+                border: none;
+                cursor: pointer;
+            }
+            .hero__users {
+                justify-content: center;
+                margin-bottom: 6px;
+            }
+}
