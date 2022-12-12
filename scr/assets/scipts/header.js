@@ -8,7 +8,8 @@ const headerNavMenuItem=document.querySelectorAll('.header__nav-menu-item');
 const headerLogo=document.querySelector('.header__logo');
 const headerNavMenuUserInfo=document.querySelector('.header__nav-menu-user-info');
 const headerNavHomeMenu=document.querySelector('.header__nav-home-menu');
-const headerNavMobmenuHide=document.querySelector('.header__nav-mobmenu');
+const headerNavMobmenuHide = document.querySelector('.header__nav-mobmenu');
+//const headerNavMobMenuBtnSignInOut=document.getElementById('header__nav-mobmenu-btn-sign-out');
 
 
 
@@ -23,7 +24,7 @@ const headerMobUserAuth=()=>{
     }else{
     headerNavMobMenuUserAuth.innerHTML=``;
     headerNavMobMenuBtnAuth.innerHTML=(`<button class="header__nav-mobmenu-btn" id="header__nav-mobmenu-btn-sign-in">Sing In</button>`);
-    zheaderNavMobMenuBtnSignInOut=document.getElementById('header__nav-mobmenu-btn-sign-in');
+    headerNavMobMenuBtnSignInOut=document.getElementById('header__nav-mobmenu-btn-sign-in');
     }
    
 }
@@ -90,11 +91,14 @@ const headerNavHomeMenuItemClick=(e)=>{
                 addCardCursor();           
                 headerNavMobMenuClose();  
                 windowOverlayHide();
-                break;                           
+                break; 
             }
          
     }
-
+const headerNavHomeMenuUserMenuAllArrowClick = () => {
+   
+                headerHideUserMenu(); 
+                windowOverlayHide(); }
 
 
     
@@ -109,13 +113,15 @@ const headerUserMenu=()=>{
             <li class="header__nav-home-menu-user-menu-items" data-headerUserMenu="recentlyAdded">Games</li>            
             <li class="header__nav-home-menu-user-menu-items" data-headerUserMenu="logOut">Log out</li>
         </ul>
-        <img class="header__nav-home-menu-user-menu-all-arrow"src="./scr/assets/images/header_arrow_up.svg" alt="arrow"></img>`;
+        <img class="header__nav-home-menu-user-menu-all-arrow"  src="./scr/assets/images/header_arrow_up.svg" alt="arrow"></img>`;
 
     const headerNavHomeMenuItem=document.querySelectorAll('.header__nav-home-menu-user-menu-items');
-      
+            
     headerNavHomeMenuItem.forEach(menu=>{
         menu.addEventListener('click',headerNavHomeMenuItemClick); }); 
-        }
+    }
+    const headerNavHomeMenuUserMenuAllArrow = document.querySelector(".header__nav-home-menu-user-menu-all-arrow"); 
+    headerNavHomeMenuUserMenuAllArrow.addEventListener('click', headerNavHomeMenuUserMenuAllArrowClick);
       }       
    
 

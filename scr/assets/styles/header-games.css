@@ -40,7 +40,7 @@ header {
     flex-wrap: wrap;
     position: relative;
     justify-content: space-between;  
-    cursor: pointer; 
+    
     padding-right: 2px;
 }
 
@@ -138,6 +138,7 @@ header {
     height: 8px;
     right: 15px;
     top: 14px;
+    cursor: pointer;
 }
 
 .header__nav-home-menu-user-menu-all{
