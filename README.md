@@ -1,4 +1,4 @@
-# Virtual_JS web
+# Virtual_React web
 # Site developed on js-lerning  at Power Code Academy
 - link to site [Virtual](https://github.com/Ivanduik/virtualReact)
 
